@@ -51,7 +51,7 @@ config = {
     'packages': find_packages(exclude=['test_*']),
     'zip_safe': False,
     'install_requires': read("requirements.txt"),
-    # 'entry_points': {'console_scripts': ['pyoneliner=joker.pyoneliner.main:run']},
+    'entry_points': {'console_scripts': ['pyol=joker.pyoneliner.main:run']},
     'classifiers': [
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',

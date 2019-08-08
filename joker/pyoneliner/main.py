@@ -150,9 +150,12 @@ def olexec(text, ctx):
     return Dot.result
 
 
-def run(prog, args):
+def run(prog=None, args=None):
     import argparse
-    desc = 'python one-liner'
+    import sys
+    if not prog and sys.argv[0].endswith('__main__.py'):
+        prog = 'python3 -m joker.pyoneliner'
+    desc = 'python one-liners in an easier way'
     pr = argparse.ArgumentParser(prog=prog, description=desc)
     aa = pr.add_argument
     aa('-n', '--numerify', action='store_true',
