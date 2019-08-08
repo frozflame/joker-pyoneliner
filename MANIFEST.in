@@ -1,0 +1,4 @@
+include requirements.txt
+exclude joker-pyoneliner/test_joker_pyoneliner/*
+recursive-include joker/pyoneliner/templates *.html
+
