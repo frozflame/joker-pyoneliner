@@ -11,7 +11,7 @@ from setuptools import setup, find_packages
 
 _nsp = 'joker'
 _pkg = 'pyoneliner'
-_desc = ''
+_desc = 'Easier way to write one-liners in Python'
 _names = [_nsp, _pkg]
 _names = [s for s in _names if s]
 
@@ -67,8 +67,8 @@ config = {
     ],
     # ensure copy static file to runtime directory
     'include_package_data': True,
-    # 'long_description': read('README.md'),
-    # 'long_description_content_type': "text/markdown",
+    'long_description': read('README.md'),
+    'long_description_content_type': "text/markdown",
 }
 
 if _nsp:
